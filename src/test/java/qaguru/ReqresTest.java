@@ -10,7 +10,7 @@ public class ReqresTest extends BaseTest {
 
 
     @Test
-    public void getSingleUser() {
+    public void getSingleUserTest() {
         given()
                 .log().uri()
                 .log().method()
