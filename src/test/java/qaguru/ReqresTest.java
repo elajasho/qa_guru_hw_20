@@ -27,7 +27,7 @@ public class ReqresTest extends BaseTest {
     }
 
     @Test
-    public void postRegisterSuccessful() {
+    public void postRegisterSuccessfulTest() {
         String authBody = "{\"email\": \"eve.holt@reqres.in\", \"password\": \"pistol\"}";
 
         given()
@@ -48,7 +48,7 @@ public class ReqresTest extends BaseTest {
     }
 
     @Test
-    public void postRegisterUnsuccessful() {
+    public void postRegisterUnsuccessfulTest() {
         String authBody = "{\"email\": \"sydney@fife\"}";
 
         given()
@@ -66,7 +66,7 @@ public class ReqresTest extends BaseTest {
     }
 
     @Test
-    public void postLoginSuccessful() {
+    public void postLoginSuccessfulTest() {
         String authBody = "{\"email\": \"eve.holt@reqres.in\", \"password\": \"cityslicka\"}";
 
         given()
@@ -84,7 +84,7 @@ public class ReqresTest extends BaseTest {
     }
 
     @Test
-    public void postLoginUnsuccessful() {
+    public void postLoginUnsuccessfulTest() {
         String authBody = "{\"email\": \"peter@klaven\"}";
 
         given()
@@ -102,7 +102,7 @@ public class ReqresTest extends BaseTest {
     }
 
     @Test
-    public void getDelayedResponse() {
+    public void getDelayedResponseTest() {
         given()
                 .log().uri()
                 .log().method()
