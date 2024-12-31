@@ -24,6 +24,8 @@ public class ReqresTest extends BaseTest {
                 .body("data.first_name", is("Janet"))
                 .body("data.last_name", is("Weaver"))
                 .body("data.avatar", is("https://reqres.in/img/faces/2-image.jpg"));
+
+                System.out.println("123");
     }
 
     @Test
