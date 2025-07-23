@@ -4,6 +4,7 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.Condition;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
@@ -19,7 +20,7 @@ import static com.codeborne.selenide.Selenide.*;
  * This test is disabled because it requires manual two-factor
  * authentication and real access to iCloud Photos.
  */
-
+@Disabled("Requires real iCloud credentials and manual 2FA")
 public class ICloudDownloadTest {
 
     @Test
